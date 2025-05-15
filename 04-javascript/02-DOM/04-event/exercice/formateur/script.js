@@ -20,7 +20,7 @@ function bgColor(){
     d2.style.backgroundColor = i2.value;
 }
 /* 
-    Exercie 2 :
+    Exercice 2 :
 
     Lors du clique sur le bouton de la div 3,
     faire apparaître une modale (soit déjà créé en html/ soit que l'on crée en JS)

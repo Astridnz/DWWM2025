@@ -17,19 +17,19 @@ export class SuperBalise extends HTMLElement
         this.addEventListener("mouseenter", this.toggle);
         this.addEventListener("mouseleave", this.toggle);
     }
+
     initStyle()
     {
         const style = document.createElement("style");
         this.shadowRoot.append(style);
-        style.textContent = /* CSS */
+        style.textContent = /*CSS*/
         `
         :host{
             font-weight: bold;
             color: red;
             position: relative;
         }
-        div
-        {
+        div{
             position: absolute;
             bottom: -3em;
             right: -2em;
@@ -39,14 +39,16 @@ export class SuperBalise extends HTMLElement
             color: yellow;
             display: none;
         }
-        `;
+        `
     }
     toggle()
     {
-        if(this.info.style.display === "" )
+        if(this.info.style.display === "")
             this.info.style.display = "block";
         else
-            this.info.style.display = "";
+            this.info.style.display= "";
     }
+
 }
+
 customElements.define("super-balise", SuperBalise);
